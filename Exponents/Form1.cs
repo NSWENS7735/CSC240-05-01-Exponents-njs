@@ -46,7 +46,7 @@ namespace Exponents
 
         public int Square(int num)
         {
-            // we will create this code in class
+            return num * num; // we will create this code in class
         }
 
         public int Cube(int num)
