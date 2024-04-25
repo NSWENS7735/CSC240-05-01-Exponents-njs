@@ -57,8 +57,10 @@ namespace Exponents
         private void xResetButton_Click(object sender, EventArgs e)
         {
             // the input and output text should be emptied
-            // turn the output to invisible
-            // turn the Go button back on
+            
+            xOutputLabel.Visible = false;    // turn the output to invisible
+            
+            xGoButton.Visible = true;   // turn the Go button back on
         }
 
     }
