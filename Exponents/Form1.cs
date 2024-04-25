@@ -34,9 +34,9 @@ namespace Exponents
             // INPUT
             
             input = Convert.ToInt32(xInputTextBox.Text);
-            
+
             // PROCESS
-            
+                        
             int squared = Square(input);
             xOutputLabel.Text = $"The square of the number is {squared}";
             
@@ -62,7 +62,8 @@ namespace Exponents
 
         private void xResetButton_Click(object sender, EventArgs e)
         {
-            // the input and output text should be emptied
+            xInputTextBox.Text = null;
+            xOutputLabel.Text = null; // the input and output text should be emptied
             
             xOutputLabel.Visible = false;    // turn the output to invisible
             
