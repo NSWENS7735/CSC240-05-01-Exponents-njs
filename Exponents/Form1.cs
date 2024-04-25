@@ -8,8 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 
 /**************************************
- * Name:
- * Date:
+ * Name:    Nate Swenson
+ * Date:    4/25/2024
  * Description: A program using user-created method
  *              for the math function Square and Cube
  * Assistance:
