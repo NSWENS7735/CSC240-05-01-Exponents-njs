@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 /**************************************
  * Name:    Nate Swenson
@@ -27,21 +28,26 @@ namespace Exponents
         private void xGoButton_Click(object sender, EventArgs e)
         {
             // STORAGE
-
+            
+            int input;
+            
             // INPUT
-
+            
+            input = Convert.ToInt32(xInputTextBox.Text);
+            
             // PROCESS
-            /* calculate the square of the number and add it to the output - 
-             * do this with a method call that allows you to pass the number
-             * and then receive the answer */
+            
+            int squared = Square(input);
+            xOutputLabel.Text = $"The square of the number is {squared}";
+            
+            int cubed = Cube(input);
 
-            /* calculate the cube of the number and add it to the output - 
-             * do this by creating a methd as in the squaring example above */
+            xOutputLabel.Text += $"\nThe cube of the number is {cubed}";
 
             // OUTPUT
-            // set the output to visible
+            xOutputLabel.Visible = true;    // set the output to visible
 
-            // turn the Go button off
+            xGoButton.Enabled = false;      // turn the Go button off
         }
 
         public int Square(int num)
@@ -60,7 +66,7 @@ namespace Exponents
             
             xOutputLabel.Visible = false;    // turn the output to invisible
             
-            xGoButton.Visible = true;   // turn the Go button back on
+            xGoButton.Enabled = true;   // turn the Go button back on
         }
 
     }
