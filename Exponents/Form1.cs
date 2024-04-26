@@ -29,7 +29,7 @@ namespace Exponents
         private void xGoButton_Click(object sender, EventArgs e)
         {
            
-            if (int.TryParse(xInputTextBox.Text, out int input))
+            if (int.TryParse(uxInputTextBox.Text, out int input))
 
             {
 
@@ -64,7 +64,7 @@ namespace Exponents
 
         private void xResetButton_Click(object sender, EventArgs e)
         {
-            xInputTextBox.Text = null;
+            uxInputTextBox.Text = null;
             xOutputLabel.Text = null; // the input and output text should be emptied
             
             xOutputLabel.Visible = false;    // turn the output to invisible

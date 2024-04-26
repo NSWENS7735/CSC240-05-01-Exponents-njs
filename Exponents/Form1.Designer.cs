@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.xInputTextBox = new System.Windows.Forms.TextBox();
-            this.xInputLabel = new System.Windows.Forms.Label();
+            this.uxInputTextBox = new System.Windows.Forms.TextBox();
+            this.uxInputLabel = new System.Windows.Forms.Label();
             this.xOutputLabel = new System.Windows.Forms.Label();
             this.xGoButton = new System.Windows.Forms.Button();
             this.xResetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // xInputTextBox
+            // uxInputTextBox
             // 
-            this.xInputTextBox.Location = new System.Drawing.Point(92, 45);
-            this.xInputTextBox.Name = "xInputTextBox";
-            this.xInputTextBox.Size = new System.Drawing.Size(100, 20);
-            this.xInputTextBox.TabIndex = 0;
+            this.uxInputTextBox.Location = new System.Drawing.Point(92, 45);
+            this.uxInputTextBox.Name = "uxInputTextBox";
+            this.uxInputTextBox.Size = new System.Drawing.Size(100, 20);
+            this.uxInputTextBox.TabIndex = 0;
             // 
-            // xInputLabel
+            // uxInputLabel
             // 
-            this.xInputLabel.AutoSize = true;
-            this.xInputLabel.Location = new System.Drawing.Point(92, 27);
-            this.xInputLabel.Name = "xInputLabel";
-            this.xInputLabel.Size = new System.Drawing.Size(85, 13);
-            this.xInputLabel.TabIndex = 3;
-            this.xInputLabel.Text = "Enter an integer:";
+            this.uxInputLabel.AutoSize = true;
+            this.uxInputLabel.Location = new System.Drawing.Point(92, 27);
+            this.uxInputLabel.Name = "uxInputLabel";
+            this.uxInputLabel.Size = new System.Drawing.Size(85, 13);
+            this.uxInputLabel.TabIndex = 3;
+            this.uxInputLabel.Text = "Enter an integer:";
             // 
             // xOutputLabel
             // 
@@ -88,8 +88,8 @@
             this.Controls.Add(this.xResetButton);
             this.Controls.Add(this.xGoButton);
             this.Controls.Add(this.xOutputLabel);
-            this.Controls.Add(this.xInputLabel);
-            this.Controls.Add(this.xInputTextBox);
+            this.Controls.Add(this.uxInputLabel);
+            this.Controls.Add(this.uxInputTextBox);
             this.Name = "Form1";
             this.Text = "Exponents Demo";
             this.ResumeLayout(false);
@@ -99,8 +99,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox xInputTextBox;
-        private System.Windows.Forms.Label xInputLabel;
+        private System.Windows.Forms.TextBox uxInputTextBox;
+        private System.Windows.Forms.Label uxInputLabel;
         private System.Windows.Forms.Label xOutputLabel;
         private System.Windows.Forms.Button xGoButton;
         private System.Windows.Forms.Button xResetButton;
