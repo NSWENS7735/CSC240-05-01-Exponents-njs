@@ -13,7 +13,8 @@ using System.Windows.Forms.VisualStyles;
  * Date:    4/25/2024
  * Description: A program using user-created method
  *              for the math function Square and Cube
- * Assistance:
+ * Assistance:https://stackoverflow.com/questions/4107955/disable-and-enable-buttons-in-c-sharp
+ * 
  *************************************/
 
 namespace Exponents
@@ -27,23 +28,24 @@ namespace Exponents
 
         private void xGoButton_Click(object sender, EventArgs e)
         {
-            // STORAGE
-            
-            int input;
-            
-            // INPUT
-            
-            input = Convert.ToInt32(xInputTextBox.Text);
+           
+            if (int.TryParse(xInputTextBox.Text, out int input))
 
-            // PROCESS
-                        
-            int squared = Square(input);
-            xOutputLabel.Text = $"The square of the number is {squared}";
-            
-            int cubed = Cube(input);
+            {
 
-            xOutputLabel.Text += $"\nThe cube of the number is {cubed}";
+                int squared = Square(input);
+                xOutputLabel.Text = $"The square of the number is {squared}";
 
+                int cubed = Cube(input);
+
+                xOutputLabel.Text += $"\nThe cube of the number is {cubed}";
+            }
+
+            else
+            {
+                xOutputLabel.Text = "Not an integer";
+
+            }
             // OUTPUT
             xOutputLabel.Visible = true;    // set the output to visible
 
