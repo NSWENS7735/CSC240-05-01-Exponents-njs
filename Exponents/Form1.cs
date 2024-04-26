@@ -19,9 +19,9 @@ using System.Windows.Forms.VisualStyles;
 
 namespace Exponents
 {
-    public partial class Form1 : Form
+    public partial class uxExponentsDemo : Form
     {
-        public Form1()
+        public uxExponentsDemo()
         {
             InitializeComponent();
         }
@@ -34,22 +34,22 @@ namespace Exponents
             {
 
                 int squared = Square(input);
-                xOutputLabel.Text = $"The square of the number is {squared}";
+                uxOutputLabel.Text = $"The square of the number is {squared}";
 
                 int cubed = Cube(input);
 
-                xOutputLabel.Text += $"\nThe cube of the number is {cubed}";
+                uxOutputLabel.Text += $"\nThe cube of the number is {cubed}";
             }
 
             else
             {
-                xOutputLabel.Text = "Not an integer";
+                uxOutputLabel.Text = "Not an integer";
 
             }
             // OUTPUT
-            xOutputLabel.Visible = true;    // set the output to visible
+            uxOutputLabel.Visible = true;    // set the output to visible
 
-            xGoButton.Enabled = false;      // turn the Go button off
+            uxGoButton.Enabled = false;      // turn the Go button off
         }
 
         public int Square(int num)
@@ -65,11 +65,11 @@ namespace Exponents
         private void xResetButton_Click(object sender, EventArgs e)
         {
             uxInputTextBox.Text = null;
-            xOutputLabel.Text = null; // the input and output text should be emptied
+            uxOutputLabel.Text = null; // the input and output text should be emptied
             
-            xOutputLabel.Visible = false;    // turn the output to invisible
+            uxOutputLabel.Visible = false;    // turn the output to invisible
             
-            xGoButton.Enabled = true;   // turn the Go button back on
+            uxGoButton.Enabled = true;   // turn the Go button back on
         }
 
     }

@@ -1,6 +1,6 @@
 ﻿namespace Exponents
 {
-    partial class Form1
+    partial class uxExponentsDemo
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,9 @@
         {
             this.uxInputTextBox = new System.Windows.Forms.TextBox();
             this.uxInputLabel = new System.Windows.Forms.Label();
-            this.xOutputLabel = new System.Windows.Forms.Label();
-            this.xGoButton = new System.Windows.Forms.Button();
-            this.xResetButton = new System.Windows.Forms.Button();
+            this.uxOutputLabel = new System.Windows.Forms.Label();
+            this.uxGoButton = new System.Windows.Forms.Button();
+            this.uxResetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // uxInputTextBox
@@ -51,46 +51,46 @@
             this.uxInputLabel.TabIndex = 3;
             this.uxInputLabel.Text = "Enter an integer:";
             // 
-            // xOutputLabel
+            // uxOutputLabel
             // 
-            this.xOutputLabel.AutoSize = true;
-            this.xOutputLabel.Location = new System.Drawing.Point(102, 181);
-            this.xOutputLabel.Name = "xOutputLabel";
-            this.xOutputLabel.Size = new System.Drawing.Size(0, 13);
-            this.xOutputLabel.TabIndex = 4;
-            this.xOutputLabel.Visible = false;
+            this.uxOutputLabel.AutoSize = true;
+            this.uxOutputLabel.Location = new System.Drawing.Point(102, 181);
+            this.uxOutputLabel.Name = "uxOutputLabel";
+            this.uxOutputLabel.Size = new System.Drawing.Size(0, 13);
+            this.uxOutputLabel.TabIndex = 4;
+            this.uxOutputLabel.Visible = false;
             // 
-            // xGoButton
+            // uxGoButton
             // 
-            this.xGoButton.Location = new System.Drawing.Point(105, 96);
-            this.xGoButton.Name = "xGoButton";
-            this.xGoButton.Size = new System.Drawing.Size(75, 67);
-            this.xGoButton.TabIndex = 6;
-            this.xGoButton.Text = "Go!";
-            this.xGoButton.UseVisualStyleBackColor = true;
-            this.xGoButton.Click += new System.EventHandler(this.xGoButton_Click);
+            this.uxGoButton.Location = new System.Drawing.Point(105, 96);
+            this.uxGoButton.Name = "uxGoButton";
+            this.uxGoButton.Size = new System.Drawing.Size(75, 67);
+            this.uxGoButton.TabIndex = 6;
+            this.uxGoButton.Text = "Go!";
+            this.uxGoButton.UseVisualStyleBackColor = true;
+            this.uxGoButton.Click += new System.EventHandler(this.xGoButton_Click);
             // 
-            // xResetButton
+            // uxResetButton
             // 
-            this.xResetButton.Location = new System.Drawing.Point(105, 212);
-            this.xResetButton.Name = "xResetButton";
-            this.xResetButton.Size = new System.Drawing.Size(75, 23);
-            this.xResetButton.TabIndex = 7;
-            this.xResetButton.Text = "Reset";
-            this.xResetButton.UseVisualStyleBackColor = true;
-            this.xResetButton.Click += new System.EventHandler(this.xResetButton_Click);
+            this.uxResetButton.Location = new System.Drawing.Point(105, 212);
+            this.uxResetButton.Name = "uxResetButton";
+            this.uxResetButton.Size = new System.Drawing.Size(75, 23);
+            this.uxResetButton.TabIndex = 7;
+            this.uxResetButton.Text = "Reset";
+            this.uxResetButton.UseVisualStyleBackColor = true;
+            this.uxResetButton.Click += new System.EventHandler(this.xResetButton_Click);
             // 
-            // Form1
+            // uxExponentsDemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.xResetButton);
-            this.Controls.Add(this.xGoButton);
-            this.Controls.Add(this.xOutputLabel);
+            this.Controls.Add(this.uxResetButton);
+            this.Controls.Add(this.uxGoButton);
+            this.Controls.Add(this.uxOutputLabel);
             this.Controls.Add(this.uxInputLabel);
             this.Controls.Add(this.uxInputTextBox);
-            this.Name = "Form1";
+            this.Name = "uxExponentsDemo";
             this.Text = "Exponents Demo";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -101,9 +101,9 @@
 
         private System.Windows.Forms.TextBox uxInputTextBox;
         private System.Windows.Forms.Label uxInputLabel;
-        private System.Windows.Forms.Label xOutputLabel;
-        private System.Windows.Forms.Button xGoButton;
-        private System.Windows.Forms.Button xResetButton;
+        private System.Windows.Forms.Label uxOutputLabel;
+        private System.Windows.Forms.Button uxGoButton;
+        private System.Windows.Forms.Button uxResetButton;
     }
 }
 
